@@ -3,7 +3,10 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "My Portfolio",
