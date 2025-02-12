@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Required for static export
   },
   trailingSlash: true,
+  assetPrefix: '/', // Add leading slash for font loading
+  basePath: '', 
 };
 
 export default nextConfig;
