@@ -5,9 +5,9 @@ import { Button } from './ui/MovingBorders'
 const Experience = () => {
   return (
     <div className="py-20 w-full">
-        <h1 className="heading">
+        <h2 className="heading">
             Dlaczego warto <span className="text-purple"> wybrać mnie?</span>
-        </h1>
+        </h2>
         <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
             {workExperience.map((card) => (
                 <Button 
@@ -21,9 +21,9 @@ const Experience = () => {
                             {card.icon}
                         </div>
                         <div className="lg:ms-5">
-                            <h2 className="text-start text-xl md:text-2xl font-bold">
+                            <h3 className="text-start text-xl md:text-2xl font-bold">
                                 {card.title}
-                            </h2>
+                            </h3>
                             <p className="text-start text-white-100 mt-3 font-semibold">
                                 {card.desc}
                             </p>

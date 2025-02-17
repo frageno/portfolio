@@ -7,10 +7,10 @@ import Image from 'next/image'
 const RecentProject = () => {
   return (
     <div id="projects" className="py-20">
-        <h1 className="heading">
+        <h2 className="heading">
             Sprawdz moje { '' }
             <span className="text-purple">ostatnie projekty!</span>
-        </h1>
+        </h2>
         <div className="flex flex-wrap items-center justify-center gap-x-20 md:gap-y-2 lg:gap-y-8 mt-10">
             {projects.map(({ id, title, des, img, iconLists, link }) => (
                 <div key={id} className="h-[32rem] sm:h-[41rem] md:h-[36rem] lg:h-[39rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">
@@ -33,9 +33,9 @@ const RecentProject = () => {
                             </div>
                             </div>
                         </div>
-                        <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                        <h3 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                             {title}
-                        </h1>
+                        </h3>
                         <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
                             {des}
                         </p>
