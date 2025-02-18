@@ -49,8 +49,8 @@ const RecentProject = () => {
                                         <Image 
                                             src={icon} 
                                             alt={`Technology ${index + 1}`} 
-                                            width={24}
-                                            height={24}
+                                            width={32}
+                                            height={32}
                                             className="p-2"
                                         />
                                     </div>
@@ -60,7 +60,7 @@ const RecentProject = () => {
                                 <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                                     Check Live Site
                                 </p>
-                                <FaLocationArrow className="ms-3" color="#CBACF9" />
+                                <FaLocationArrow className="ms-3" color="#30AADD" />
                             </div>
                         </div>
                     </PinContainer>
