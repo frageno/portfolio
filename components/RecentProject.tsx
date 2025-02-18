@@ -11,12 +11,12 @@ const RecentProject = () => {
             Sprawdz moje { '' }
             <span className="text-purple">ostatnie projekty!</span>
         </h2>
-        <div className="flex flex-wrap items-center justify-center gap-x-20 md:gap-y-2 lg:gap-y-8 mt-10">
+        <div className="flex flex-wrap items-center justify-center gap-x-16 md:gap-y-2 lg:gap-y-8 mt-10">
             {projects.map(({ id, title, des, img, iconLists, link }) => (
-                <div key={id} className="h-[32rem] sm:h-[41rem] md:h-[36rem] lg:h-[39rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">
+                <div key={id} className="h-[32rem] sm:h-[41rem] md:h-[36rem] lg:h-auto lg:min-h-[35rem] flex items-center justify-center sm:w-[570px] xl:w-[420px] 2xl:w-[550px] w-[80vw]">
                     
                     <PinContainer title={link} href={link}>
-                        <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] mb-10">
+                        <div className="relative flex items-center justify-center sm:w-[570px] xl:w-[420px] 2xl:w-[550px] w-[80vw] overflow-hidden h-[30vh] 2k:h-[25vh] mb-10">
                         <div className="relative w-full h-full overflow-hidden lg:rounded-2xl bg-[#13162d]">
                             <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/10 to-transparent"></div>
                             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(57,59,178,0.1),transparent_50%)]"></div>
