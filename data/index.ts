@@ -185,7 +185,7 @@ export const navItems = [
       title: "Twoje cele są moim priorytetem",
       icon: "🤝",
       desc: "Wsłuchuję się w potrzeby klienta, dostarczając rozwiązania idealnie dopasowane do wymagań i potrzeb klienta.",
-      className: "md:col-span-2", // change to md:col-span-2
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
@@ -193,7 +193,7 @@ export const navItems = [
       title: "Od projektu po wdrożenie",
       icon: "🛠️",
       desc: "Zajmuję się całym procesem tworzenia stron – od koncepcji i designu, przez programowanie, aż po optymalizację i wdrożenie. Możesz liczyć na pełne wsparcie na każdym etapie",
-      className: "md:col-span-2", // change to md:col-span-2
+      className: "md:col-span-2",
       thumbnail: "/exp3.svg",
     },
     {
