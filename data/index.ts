@@ -14,7 +14,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/about-img.jpg",
       spareImg: "",
     },
     {
@@ -24,7 +24,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
-      img: "",
+      img: "/about-img-3.png",
       spareImg: "",
     },
     {
