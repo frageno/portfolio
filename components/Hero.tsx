@@ -30,10 +30,10 @@ const Hero = () => {
               Kodowanie z pasją i precyzją
             </h1>
             <TextGenerateEffect 
-              className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Responsywne i szybkie rozwiązania webowe w najnowszych technologiach."
+              className="text-center text-4xl md:text-5xl xl:text-6xl" words="Responsywne i szybkie rozwiązania webowe w najnowszych technologiach."
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Cześć 👋 Jestem Szymon, Frontend Developer 💻</p>
-            <a href="#about">
+            <a href="#projects">
               <MagicButton title="Zobacz moje pracę" icon={<FaRocket />} position="right" />
             </a>
           </div>

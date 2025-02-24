@@ -10,7 +10,7 @@ interface VerticalSliderProps {
 
 export const VerticalSlider = ({ leftLists, rightLists }: VerticalSliderProps) => {
   return (
-    <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:right-10 h-full">
+    <div className="flex gap-1 lg:gap-5 w-fit absolute right-5 lg:right-10 h-full">
       <div className="w-full h-full">
         <Swiper
           direction="vertical"
@@ -23,7 +23,7 @@ export const VerticalSlider = ({ leftLists, rightLists }: VerticalSliderProps) =
           speed={800}
           centeredSlides={true}
           slidesPerView={3.7}
-          spaceBetween={0}
+          spaceBetween={12}
           className="h-full"
         >
           {leftLists.map((item, i) => (

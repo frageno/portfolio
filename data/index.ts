@@ -1,9 +1,9 @@
 import { Iceberg } from "next/font/google";
 
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
+    { name: "O mnie", link: "#o-mnie" },
+    { name: "Projekty", link: "#projekty" },
+    { name: "Kontakt", link: "#kontakt" },
   ];
   
   export const gridItems = [
