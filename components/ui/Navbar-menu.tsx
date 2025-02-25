@@ -33,7 +33,7 @@ export const MenuItem = ({
       <Link href={link}>
         <motion.span
           transition={{ duration: 0.3 }}
-          className={`cursor-pointer text-base tracking-widest ${
+          className={`cursor-pointer text-base font-semibold transition-colors duration-300 ${
             active === item ? 'text-purple' : 'text-black dark:text-white'
           }`}
         >
@@ -54,7 +54,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-transparent dark:border-white/[0.1] shadow-input flex justify-center space-x-4 px-16 lg:px-32 py-6"
+      className="relative rounded-full border border-transparent dark:border-white/[0.1] shadow-input flex justify-center space-x-4 px-8 md:px-16 lg:px-32 py-6"
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:

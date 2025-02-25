@@ -33,7 +33,7 @@ const Hero = () => {
               className="text-center text-4xl md:text-5xl xl:text-6xl" words="Responsywne i szybkie rozwiązania webowe w najnowszych technologiach."
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Cześć 👋 Jestem Szymon, Frontend Developer 💻</p>
-            <a href="#projects">
+            <a href="#projekty">
               <MagicButton title="Zobacz moje pracę" icon={<FaRocket />} position="right" />
             </a>
           </div>

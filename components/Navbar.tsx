@@ -1,21 +1,55 @@
 "use client";
-import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/Navbar-menu";
+import React, { useState, useEffect } from "react";
+import { HoveredLink, Menu, MenuItem } from "./ui/Navbar-menu";
 import { cn } from "@/utils/cn";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
+const mobileVariants = {
+  initial: { top: "6rem" },
+  scrolled: { top: "1.5rem" }
+};
 
-export default function Navbar({ className, navItems }: 
-    {   className?: string,  
-        navItems: {
-            name: string;
-            link: string;
-            icon?: JSX.Element;
-          }[]
-    }) {
+const desktopVariants = {
+  initial: { top: "8rem" },
+  scrolled: { top: "2.5rem" }
+};
+
+export default function Navbar({ 
+  className, 
+  navItems 
+}: { 
+  className?: string,
+  navItems: {
+    name: string;
+    link: string;
+    icon?: JSX.Element;
+  }[]
+}) {
   const [active, setActive] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+  const { scrollY } = useScroll();
+  const isMobile = window.innerWidth < 768;
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  });
+
   return (
-    <div
-      className={cn("fixed top-10 inset-x-0 w-[fit-content] mx-5 md:mx-auto z-[9999]", className)}
+    <motion.div
+      variants={isMobile ? mobileVariants : desktopVariants}
+      initial="initial"
+      animate={scrolled ? "scrolled" : "initial"}
+      transition={{
+        duration: 0.2
+      }}
+      className={cn(
+        "fixed inset-x-0 w-full md:w-[fit-content] px-5 md:mx-auto z-[9999]",
+        className
+      )}
     >
       <Menu setActive={setActive}>
         {navItems.map((item) => (
@@ -28,6 +62,6 @@ export default function Navbar({ className, navItems }:
           />
         ))}
       </Menu>
-    </div>
+    </motion.div>
   );
 }
