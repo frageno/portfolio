@@ -14,7 +14,7 @@ const Experience = () => {
                     key={card.id}
                     duration={Math.floor(Math.random() * 10000) + 10000}
                     borderRadius='1.75rem'
-                    classNames="flex-1 text-white border-neutral-200 dark:border-slate-800">
+                    classNames="flex-1 text-white border-neutral-200 dark:border-white/[0.1]">
                     <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
                         {/* <img src={card.thumbnail} alt={card.thumbnail} className="lg-32 md:w-20 w-16" /> */}
                         <div className="text-2xl md:text-5xl">
@@ -24,7 +24,7 @@ const Experience = () => {
                             <h3 className="text-start text-xl md:text-2xl font-bold">
                                 {card.title}
                             </h3>
-                            <p className="text-start text-white-100 mt-3 font-semibold">
+                            <p className="text-start text-slate-500 mt-3 font-medium">
                                 {card.desc}
                             </p>
                         </div>

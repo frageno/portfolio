@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, JSX } from "react";
 import { HoveredLink, Menu, MenuItem } from "./ui/Navbar-menu";
 import { cn } from "@/utils/cn";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";

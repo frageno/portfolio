@@ -1,71 +1,92 @@
+'use client'
 import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow } from "react-icons/fa6"
 import Image from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { FiChevronsLeft, FiChevronsRight } from "react-icons/fi"; // Add this import
 
 const RecentProject = () => {
   return (
-    <div id="projekty" className="py-20">
+    <div id="projekty" className="py-20 space-y-12">
         <h2 className="heading">
             Sprawdz moje { '' }
             <span className="text-purple">ostatnie projekty!</span>
         </h2>
-        <div className="flex flex-wrap items-center justify-center gap-x-16 md:gap-y-2 lg:gap-y-8 mt-10">
-            {projects.map(({ id, title, des, img, iconLists, link }) => (
-                <div key={id} className="h-[32rem] sm:h-[41rem] md:h-[36rem] lg:h-auto lg:min-h-[35rem] flex items-center justify-center sm:w-[570px] xl:w-[420px] 2xl:w-[550px] w-[80vw]">
-                    <PinContainer title={link} href={link}>
-                        <div className="relative flex items-center justify-center sm:w-[570px] xl:w-[420px] 2xl:w-[550px] w-[80vw] overflow-hidden h-[30vh] 2k:h-[25vh] mb-10">
-                            <div className="relative w-full h-full overflow-hidden lg:rounded-2xl bg-[#13162d]">
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/10 to-transparent"></div>
-                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(57,59,178,0.1),transparent_50%)]"></div>
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/5 via-transparent to-black/50"></div>
-                                    <Image 
-                                        src={img} 
-                                        alt={title} 
-                                        width={500}
-                                        height={300}
-                                        className="w-[90%] h-[90%] object-contain relative z-10"
-                                        priority
-                                    />
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 mb-2">
-                                {title}
-                            </h3>
-                            <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
-                                {des}
-                            </p>
-                            <div className="flex items-center justify-between mt-7 mb-3">
-                                {/* <div className="flex items-center">
-                                    {iconLists.map((icon, index) => (
-                                        <div key={index} className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center" 
-                                        style={{
-                                            transform: `translateX(-${5 * index + 2}px)`,
-                                        }}>
-                                            <Image 
-                                                src={icon} 
-                                                alt={`Technology ${index + 1}`} 
-                                                width={32}
-                                                height={32}
-                                                className="p-2"
-                                            />
-                                        </div>
-                                    ))}
-                                </div> */}
-                                <div className="flex justify-center items-center">
-                                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                                        Check Live Site
-                                    </p>
-                                    <FaLocationArrow className="ms-3" color="#30AADD" />
-                                </div>
-                            </div>
-                    </PinContainer>
+        <div className="relative px-5">
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+        //   pagination={{ clickable: true }}
+          slidesPerView={1}
+          spaceBetween={16}
+          className="w-full"
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2,
+              spaceBetween: 16
+            },
+            768: {
+              slidesPerView: 1.75,
+              spaceBetween: 24
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 32
+            }
+          }}
+        >
+          {projects.map(({ id, title, des, img, link }) => (
+            <SwiperSlide key={id}>
+              <div className="w-full flex items-center justify-center rounded-3xl p-8 border border-white/[0.1]">
+                <div className="flex basis-full flex-col tracking-tight text-slate-100/50">
+                  <div className="relative w-full h-[300px] overflow-hidden lg:rounded-3xl bg-[#13162d]">
+                    <Image 
+                      src={img} 
+                      alt={title} 
+                      width={500}
+                      height={300}
+                      className="w-full h-full object-cover relative"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/10 to-transparent"></div>
+                  </div>
+                  
+                  <div className="pt-6 space-y-2">
+                    <h3 className="font-bold text-base lg:text-xl text-slate-100">
+                      {title}
+                    </h3>
+                    <p className="text-sm lg:text-base text-slate-500 line-clamp-2">
+                      {des}
+                    </p>
+                    <div className="flex items-center pt-4">
+                      <a className="text-sm lg:text-base text-purple cursor-pointer">
+                        Check Live Site
+                      </a>
+                      <FaLocationArrow className="ms-3" color="#30AADD" />
+                    </div>
+                  </div>
                 </div>
-            ))}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {/* Custom arrows */}
+        <div className="swiper-button-prev !-left-8 !text-purple !w-8 !h-8">
+            <FiChevronsLeft className="w-full h-full" />
         </div>
+        <div className="swiper-button-next !-right-8 !text-purple !w-8 !h-8"> 
+            <FiChevronsRight className="w-full h-full" />
+        </div>
+      </div>
     </div>
   )
 }
