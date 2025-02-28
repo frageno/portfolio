@@ -11,7 +11,7 @@ const Grid = () => {
                     id={item.id}
                     key={index}
                     title={item.title}
-                    description={item.description}
+                    subtitle={item.subtitle}
                     className={item.className}
                     img={item.img}
                     imgClassName={item.imgClassName}
