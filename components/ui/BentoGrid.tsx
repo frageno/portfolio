@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { VerticalSlider } from "../VerticalSlider";
+import { techStack } from "@/data";
 
 export const BentoGrid = ({
   className,
@@ -36,6 +37,7 @@ export const BentoGridItem = ({
   id,
   title,
   subtitle,
+  description,
   img,
   imgClassName,
   titleClassName,
@@ -45,6 +47,7 @@ export const BentoGridItem = ({
   id: number;
   title?: string | React.ReactNode;
   subtitle?: string | React.ReactNode;
+  description?: string;
   img?: string;
   imgClassName?: string;
   titleClassName?: string;
@@ -113,9 +116,14 @@ export const BentoGridItem = ({
             {subtitle}
           </div>
           <div
-            className={`${id === 1 && "font-sans text-lg lg:text-3xl !font-bold"} font-light text-slate-200 text-lg z-10`}
+            className={`${(id === 1 || id === 3) && "font-sans text-lg lg:text-3xl !font-bold"} font-light text-slate-400 text-lg z-10`}
             dangerouslySetInnerHTML={{ __html: title }}
           />
+          {description && (
+            <div className="text-base text-slate-400 max-w-3xl">
+              {description}
+            </div>
+          )}
           {id === 2 && (
             <a href="#kontakt">
               <MagicButton title="Skontaktuj się" position="right" />
@@ -124,71 +132,17 @@ export const BentoGridItem = ({
 
           {id === 3 && (
               // <VerticalSlider leftLists={leftLists} rightLists={rightLists} />
-              <div className="grid grid-cols-4 gap-4">
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/wp-logo.png" className="w-6 h-6 object-cover" />
+              <div className="grid grid-cols-4 gap-4 pt-8">
+                {techStack.map((tech, index) => (
+                  <div key={index} className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                    <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                      <img src={tech.image} className="w-10 h-10 object-cover" alt={tech.alt} />
+                    </div>
+                    <div>
+                      <span>{tech.name}</span>
+                    </div>
                   </div>
-                  <div>
-                    <span>Wordpress</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
-                  </div>
-                  <div>
-                    <span>Javascript</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
-                  </div>
-                  <div>
-                    <span>Typescript</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
-                  </div>
-                  <div>
-                    <span>React</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
-                  </div>
-                  <div>
-                    <span>Next.js</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
-                  </div>
-                  <div>
-                    <span>PHP</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
-                  </div>
-                  <div>
-                    <span>SCSS</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
-                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
-                    <img src="/tailwind-logo.png" className="w-6 h-6 object-cover" />
-                  </div>
-                  <div>
-                    <span>Tailwind</span>
-                  </div>
-                </div>
+                ))}
               </div>
           )}
           {id === 6 && (

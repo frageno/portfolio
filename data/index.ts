@@ -30,8 +30,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Technologie",
-      subtitle: "W czym koduje",
+      title: "Technologie, w których pracuję",
+      description: 'Pracuję z nowoczesnymi technologiami, takimi jak JavaScript, React, Next.js, Tailwind CSS, SCSS, PHP i WordPress, tworząc funkcjonalne i estetyczne strony oraz aplikacje internetowe.',
       className: "col-span-12 md:row-span-2",
       titleClassName: "justify-center",
     },
@@ -215,4 +215,47 @@ export const navItems = [
       url: 'https://www.linkedin.com/in/szymon-piatkowski/',
       img: "/link.svg",
     },
+  ];
+
+  export const techStack = [
+    {
+      image: '/wp-logo.png',
+      name: 'Wordpress',
+      alt: 'Wordpress logo'
+    },
+    {
+      image: '/js-logo.png',
+      name: 'Javascript',
+      alt: 'Javascript logo'
+    },
+    {
+      image: '/ts-logo.png',
+      name: 'Typescript',
+      alt: 'Typescript logo'
+    },
+    {
+      image: '/react-logo.png',
+      name: 'React',
+      alt: 'React logo'
+    },
+    {
+      image: '/next-logo.png',
+      name: 'Next.js',
+      alt: 'Next.js logo'
+    },
+    {
+      image: '/php-logo.png',
+      name: 'PHP',
+      alt: 'PHP logo'
+    },
+    {
+      image: '/sass-logo.png',
+      name: 'SCSS',
+      alt: 'SCSS logo'
+    },
+    {
+      image: '/tailwind-logo.png',
+      name: 'Tailwind',
+      alt: 'Tailwind logo'
+    }
   ];
