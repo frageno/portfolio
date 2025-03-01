@@ -8,7 +8,7 @@ const Experience = () => {
         <h2 className="heading">
             Dlaczego warto <span className="text-purple"> wybrać mnie?</span>
         </h2>
-        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-4 lg:gap-6">
             {workExperience.map((card) => (
                 <Button 
                     key={card.id}
@@ -24,7 +24,7 @@ const Experience = () => {
                             <h3 className="text-start text-xl md:text-2xl font-bold">
                                 {card.title}
                             </h3>
-                            <p className="text-start text-slate-500 mt-3 font-medium">
+                            <p className="text-start text-slate-400 mt-3 font-medium">
                                 {card.desc}
                             </p>
                         </div>

@@ -10,12 +10,10 @@ export const navItems = [
     {
       id: 1,
       title: "Dążę do perfekcji w szczegółach – <br /> od kodu po końcowy design 🎯",
-      subtitle: "",
-      className: "lg:col-span-6 md:col-span-12 min-h-[40vh] lg:h-auto",
+      className: "lg:col-span-6 col-span-12 min-h-[40vh] lg:h-auto",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
       img: "/about-img.jpg",
-      spareImg: "",
     },
     {
       id: 2,
@@ -23,10 +21,8 @@ export const navItems = [
             <br /><br />Dbam o funkcjonalność, wydajność i bezpieczeństwo stron, a także o przejrzysty proces współpracy – od projektu graficznego, przez kodowanie, aż po wdrożenie.
             <br /><br /> Jeśli szukasz kogoś, kto stworzy stronę od A do Z i zadba o każdy szczegół, zapraszam do kontaktu! 🚀`,
       subtitle: "Kilka słów o mnie",
-      className: "lg:col-span-6 md:col-span-12",
-      imgClassName: "",
+      className: "lg:col-span-6 col-span-12",
       titleClassName: "justify-start",
-      // img: "/about-img-3.png",
     },
     {
       id: 3,
@@ -35,37 +31,6 @@ export const navItems = [
       className: "col-span-12 md:row-span-2",
       titleClassName: "justify-center",
     },
-    // {
-    //   id: 4,
-    //   title: "Zafascynowany technologiami i ciągłym doskonaleniem w programowaniu",
-    //   description: "",
-    //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    //   imgClassName: "",
-    //   titleClassName: "justify-start",
-    //   img: "/grid.svg",
-    //   spareImg: "/b4.svg",
-    // },
-  
-    // {
-    //   id: 5,
-    //   title: "Tworzę nowoczesne, responsywne strony i aplikacje internetowe od podstaw, które łączą estetykę, funkcjonalność i wydajność 🚀",
-    //   description: "Co tworzę?",
-    //   className: "md:col-span-3 md:row-span-2",
-    //   imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    //   titleClassName: "justify-center md:justify-start lg:justify-center",
-    //   img: "/about-img-4.png",
-    //   spareImg: "/grid.svg",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Gotowy na wspólną realizację projektu?",
-    //   description: "",
-    //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    //   imgClassName: "",
-    //   titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    //   img: "",
-    //   spareImg: "",
-    // },
   ];
   
   export const projects = [

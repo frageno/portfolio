@@ -44,7 +44,7 @@ const RecentProject = () => {
             },
             1280: {
               slidesPerView: 3,
-              spaceBetween: 32
+              spaceBetween: 24
             }
           }}
         >
@@ -68,7 +68,7 @@ const RecentProject = () => {
                     <h3 className="font-bold text-base lg:text-xl text-slate-100">
                       {title}
                     </h3>
-                    <p className="text-sm lg:text-base text-slate-500 line-clamp-2">
+                    <p className="text-sm lg:text-base text-slate-400 line-clamp-2">
                       {des}
                     </p>
                     <div className="flex items-center pt-4">
