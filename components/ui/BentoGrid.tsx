@@ -123,7 +123,73 @@ export const BentoGridItem = ({
           )}
 
           {id === 3 && (
-              <VerticalSlider leftLists={leftLists} rightLists={rightLists} />
+              // <VerticalSlider leftLists={leftLists} rightLists={rightLists} />
+              <div className="grid grid-cols-4 gap-4">
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/wp-logo.png" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>Wordpress</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>Javascript</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>Typescript</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>React</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>Next.js</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>PHP</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/js-logo.jpg" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>SCSS</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1]">
+                  <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg">
+                    <img src="/tailwind-logo.png" className="w-6 h-6 object-cover" />
+                  </div>
+                  <div>
+                    <span>Tailwind</span>
+                  </div>
+                </div>
+              </div>
           )}
           {id === 6 && (
             <div className="mt-5 relative">

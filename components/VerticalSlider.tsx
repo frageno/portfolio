@@ -36,31 +36,6 @@ export const VerticalSlider = ({ leftLists, rightLists }: VerticalSliderProps) =
           ))}
         </Swiper>
       </div>
-      
-      {/* <div className="w-1/2">
-        <Swiper
-          direction="vertical"
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-            reverseDirection: true
-          }}
-          loop={true}
-          speed={800}
-          slidesPerView={4}
-          className="h-full"
-        >
-          {rightLists.map((item, i) => (
-            <SwiperSlide key={i}>
-              <span className="lg:py-4 py-2 px-3 text-xs lg:text-base opacity-50 
-                lg:opacity-100 rounded-lg text-center bg-[#10132E] block">
-                {item}
-              </span>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div> */}
     </div>
   );
 };

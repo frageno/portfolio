@@ -9,7 +9,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "Dążę do perfekcji w szczegółach – od kodu po końcowy design 🎯",
+      title: "Dążę do perfekcji w szczegółach – <br /> od kodu po końcowy design 🎯",
       subtitle: "",
       className: "lg:col-span-6 md:col-span-12 min-h-[40vh] lg:h-auto",
       imgClassName: "w-full h-full",
@@ -28,16 +28,13 @@ export const navItems = [
       titleClassName: "justify-start",
       // img: "/about-img-3.png",
     },
-    // {
-    //   id: 3,
-    //   title: "Technologie",
-    //   description: "W czym koduje",
-    //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    //   imgClassName: "",
-    //   titleClassName: "justify-center",
-    //   img: "",
-    //   spareImg: "",
-    // },
+    {
+      id: 3,
+      title: "Technologie",
+      subtitle: "W czym koduje",
+      className: "col-span-12 md:row-span-2",
+      titleClassName: "justify-center",
+    },
     // {
     //   id: 4,
     //   title: "Zafascynowany technologiami i ciągłym doskonaleniem w programowaniu",
