@@ -13,10 +13,10 @@ import { FiChevronsLeft, FiChevronsRight } from "react-icons/fi"; // Add this im
 
 const RecentProject = () => {
   return (
-    <div id="projekty" className="py-20 space-y-12">
+    <div id="projekty" className="space-y-12">
         <h2 className="heading">
             Sprawdz moje { '' }
-            <span className="text-purple">ostatnie projekty!</span>
+            <span className="text-purple">{"{ostatnie projekty}"}</span>
         </h2>
         <div className="relative px-8 lg:px-6">
         <Swiper

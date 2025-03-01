@@ -7,7 +7,7 @@ import { FaRocket } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="relative w-full pt-24">
         <div>
           <Spotlight
             className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -30,7 +30,7 @@ const Hero = () => {
               Kodowanie z pasją i precyzją
             </h1>
             <TextGenerateEffect 
-              className="text-center text-4xl md:text-5xl xl:text-6xl" words="Responsywne i szybkie rozwiązania webowe w najnowszych technologiach."
+              className="text-center text-4xl md:text-5xl xl:text-6xl" words="Responsywne i szybkie rozwiązania webowe w najnowszych technologiach"
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Cześć 👋 Jestem Szymon, Frontend Developer 💻</p>
             <a href="#projekty">

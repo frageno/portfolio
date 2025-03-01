@@ -11,7 +11,7 @@ export const navItems = [
       id: 1,
       title: "Dążę do perfekcji w szczegółach – od kodu po końcowy design 🎯",
       subtitle: "",
-      className: "lg:col-span-6 md:col-span-6 min-h-[40vh] lg:h-auto",
+      className: "lg:col-span-6 md:col-span-12 min-h-[40vh] lg:h-auto",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
       img: "/about-img.jpg",
@@ -23,7 +23,7 @@ export const navItems = [
             <br /><br />Dbam o funkcjonalność, wydajność i bezpieczeństwo stron, a także o przejrzysty proces współpracy – od projektu graficznego, przez kodowanie, aż po wdrożenie.
             <br /><br /> Jeśli szukasz kogoś, kto stworzy stronę od A do Z i zadba o każdy szczegół, zapraszam do kontaktu! 🚀`,
       subtitle: "Kilka słów o mnie",
-      className: "lg:col-span-6 md:col-span-3",
+      className: "lg:col-span-6 md:col-span-12",
       imgClassName: "",
       titleClassName: "justify-start",
       // img: "/about-img-3.png",

@@ -13,16 +13,18 @@ export default function Home() {
     <main className="relative bg-black-100 flex justify-center items-center overflow-clip flex-col mx-auto sm:px-10 px-5">
     <div className="max-w-7xl w-full">
       <div className="relative flex justify-center items-center z-50 py-6">
-      <a href="/" className="text-3xl md:text-6xl font-black">
-        {"{Piatkowski"}<span className="text-purple">{".dev}"}</span>
-      </a>
+        <a href="/" className="text-3xl md:text-6xl font-black">
+          {"{Piatkowski"}<span className="text-purple">{".dev}"}</span>
+        </a>
       </div>
       <Navbar navItems={navItems} />
-      <Hero />
-      <Grid />
-      <RecentProject />
-      <Experience />
-      <Footer />
+      <div className="space-y-16 md:space-y-24 lg:space-y-32">
+        <Hero />
+        <Grid />
+        <RecentProject />
+        <Experience />
+        <Footer />
+      </div>
     </div>
   </main>
   );
