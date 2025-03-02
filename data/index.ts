@@ -20,13 +20,13 @@ export const navItems = [
       title: `Cześć! Nazywam się Szymon Piątkowski i tworzę nowoczesne, responsywne strony internetowe oparte na WordPress i WooCommerce. Specjalizuję się w dedykowanych rozwiązaniach – nie korzystam z gotowych szablonów, dzięki czemu każdy projekt jest unikalny i dostosowany do potrzeb klienta.
             <br /><br />Dbam o funkcjonalność, wydajność i bezpieczeństwo stron, a także o przejrzysty proces współpracy – od projektu graficznego, przez kodowanie, aż po wdrożenie.
             <br /><br /> Jeśli szukasz kogoś, kto stworzy stronę od A do Z i zadba o każdy szczegół, zapraszam do kontaktu! 🚀`,
-      subtitle: "Kilka słów o mnie",
+      subtitle: "Kilka słów o mnie 👨‍💻",
       className: "lg:col-span-6 col-span-12",
       titleClassName: "justify-start",
     },
     {
       id: 3,
-      title: "Technologie, w których pracuję",
+      title: "Technologie, w których pracuję 💻",
       description: 'Pracuję z nowoczesnymi technologiami, takimi jak JavaScript, React, Next.js, Tailwind CSS, SCSS, PHP i WordPress, tworząc funkcjonalne i estetyczne strony oraz aplikacje internetowe.',
       className: "xl:col-span-8 col-span-12 md:row-span-2",
       titleClassName: "justify-center",

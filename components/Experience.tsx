@@ -15,9 +15,8 @@ const Experience = () => {
                     duration={Math.floor(Math.random() * 10000) + 10000}
                     borderRadius='1.75rem'
                     classNames="flex-1 text-white border-neutral-200 dark:border-white/[0.1]">
-                    <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-                        {/* <img src={card.thumbnail} alt={card.thumbnail} className="lg-32 md:w-20 w-16" /> */}
-                        <div className="text-2xl md:text-5xl">
+                    <div className="flex lg:flex-row flex-col lg:items-center p-6 md:p-8 xl:p-12 gap-2">
+                        <div className="text-4xl md:text-5xl mb-4 lg:mb-0">
                             {card.icon}
                         </div>
                         <div className="lg:ms-5">

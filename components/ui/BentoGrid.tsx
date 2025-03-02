@@ -52,7 +52,7 @@ export const BentoGridItem = ({
 }: {
   className?: string;
   id: number;
-  title?: string | React.ReactNode;
+  title?: string;
   subtitle?: string | React.ReactNode;
   description?: string;
   img?: string;
@@ -118,12 +118,12 @@ export const BentoGridItem = ({
             `${(id === 1 || id === 2) && "group-hover/bento:translate-x-2 transition duration-200"} relative md:h-full flex flex-col px-5 p-5 lg:p-10 space-y-4`
           )}
         >
-          <div className="font-sans font-semibold md:text-xs lg:text-base text-sm text-purple z-10">
+          <div className="font-bold md:text-xs lg:text-3xl text-sm text-white z-10">
             {subtitle}
           </div>
           <div
-            className={`${(id === 1 || id === 3 || id === 4) && "font-sans text-lg lg:text-3xl !text-white !font-bold"} font-light text-slate-400 text-lg z-10`}
-            dangerouslySetInnerHTML={{ __html: title }}
+            className={`${(id === 1 || id === 3 || id === 4) && "font-primary text-lg lg:text-3xl !text-white !font-bold"} font-light text-slate-400 text-lg z-10`}
+            dangerouslySetInnerHTML={{ __html: title || '' }}
           />
           {description && (
             <div className="text-base text-slate-400 max-w-3xl">
