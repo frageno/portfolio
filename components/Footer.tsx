@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center">
             <span className="heading !leading-[1.2] lg:w-[45vw]">
-              Nie czekaj – wynieś <span className="text-purple">swoją stronę</span><br /> na nowy poziom już teraz!
+              Nie czekaj – wynieś <span className="text-purple">swoją stronę</span> na nowy poziom już teraz!
             </span>
             <p className="text-white-200 md:mt-10 my-5 text-center">Skontaktuj się ze mną już dzisiaj!</p>
             <a href="mailto:szymon.piatkowski27@gmail.com">

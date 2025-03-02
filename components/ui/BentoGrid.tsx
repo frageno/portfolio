@@ -106,6 +106,12 @@ export const BentoGridItem = ({
           )}
         </div>
 
+        {id === 4 && (
+          <BackgroundGradientAnimation>
+            {/* <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div> */}
+          </BackgroundGradientAnimation>
+        )}
+
         <div
           className={cn(
             titleClassName,
@@ -116,7 +122,7 @@ export const BentoGridItem = ({
             {subtitle}
           </div>
           <div
-            className={`${(id === 1 || id === 3) && "font-sans text-lg lg:text-3xl !text-white !font-bold"} font-light text-slate-400 text-lg z-10`}
+            className={`${(id === 1 || id === 3 || id === 4) && "font-sans text-lg lg:text-3xl !text-white !font-bold"} font-light text-slate-400 text-lg z-10`}
             dangerouslySetInnerHTML={{ __html: title }}
           />
           {description && (
@@ -125,11 +131,11 @@ export const BentoGridItem = ({
             </div>
           )}
 
-          {id === 2 && (
+          {/* {id === 2 && (
             <a href="#kontakt">
               <MagicButton title="Skontaktuj się" position="right" />
             </a>
-          )}
+          )} */}
 
           {id === 3 && (
             <div className="w-full">
@@ -183,6 +189,25 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
+
+          {id === 4 && (
+            <div className="mt-5 relative">
+              <div
+                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+                  }`}
+              >
+                <Lottie options={defaultOptions} height={200} width={400} />
+              </div>
+
+              <MagicButton
+                title={copied ? "Email skopiowany!" : "Skopiuj mój email"}
+                icon={<IoCopyOutline />}
+                position="left"
+                handleClick={handleCopy}
+                otherClasses="!bg-[#161A31]"
+              />  
+            </div>
+          )}  
         </div>
       </div>
     </div>
