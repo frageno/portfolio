@@ -14,10 +14,14 @@ import { FiChevronsLeft, FiChevronsRight } from "react-icons/fi"; // Add this im
 const RecentProject = () => {
   return (
     <div id="projekty" className="space-y-12">
-        <h2 className="heading">
-            Sprawdz moje { '' }
-            <span className="text-purple">{"{ostatnie projekty}"}</span>
-        </h2>
+        <div className="space-y-6">
+          <h2 className="heading">
+              Sprawdz moje { '' }
+              <span className="text-purple">ostatnie projekty</span>
+          </h2>
+          <p className="text-slate-400 text-base text-center max-w-3xl mx-auto">Proces współpracy jest prosty i przejrzysty, tworzę projekt, wdrażam go, a następnie dopracowujemy szczegóły przed finalnym uruchomieniem. Dzięki temu masz pełną kontrolę nad efektem końcowym!</p>
+        </div>
+
         <div className="relative px-8 lg:px-6">
         <Swiper
           modules={[Navigation]}

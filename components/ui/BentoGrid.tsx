@@ -131,19 +131,13 @@ export const BentoGridItem = ({
             </div>
           )}
 
-          {/* {id === 2 && (
-            <a href="#kontakt">
-              <MagicButton title="Skontaktuj się" position="right" />
-            </a>
-          )} */}
-
           {id === 3 && (
             <div className="w-full">
               {/* Desktop Grid */}
               <div className="hidden lg:grid md:grid-cols-2 lg:grid-cols-4 gap-4 pt-8">
                 {techStack.map((tech, index) => (
-                  <div key={index} className="flex items-center gap-4 p-3 rounded-xl border border-white/[0.1] transition-all duration-300 hover:bg-slate-900/[0.8] hover:scale-105 group/tech">
-                    <div className="flex items-center justify-center w-12 h-12 bg-slate-900/[0.8] rounded-lg border border-transparent transition-all duration-300 group-hover/tech:border-white/[0.1]">
+                  <div key={index} className="flex items-center gap-4 p-3 rounded-xl border border-black-300 transition-all duration-300 hover:bg-black-200 hover:scale-105 group/tech">
+                    <div className="flex items-center justify-center w-12 h-12 bg-black-200 rounded-lg border border-transparent transition-all duration-300 group-hover/tech:border-white/[0.1]">
                       <img src={tech.image} className="w-10 h-10 object-cover" alt={tech.alt} />
                     </div>
                     <div>
