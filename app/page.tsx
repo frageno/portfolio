@@ -34,29 +34,29 @@ export default function Home() {
           <div className="relative grid grid-cols-12 z-10">
             {/* First row - span 6 columns */}
             <div className="flex flex-col items-center justify-center text-center col-span-12 md:col-span-6 px-6 py-8 xl:p-12 space-y-4 border-y md:border-r md:border-t-0 border-b border-white/[0.1]">
-              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">01.</div>
+              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">01</div>
               <div className="text-white text-2xl">Kontakt i analiza potrzeb</div>
               <p className="text-slate-400 text-base">Rozpoczynamy od rozmowy lub wypełnienia formularza, aby dokładnie zrozumieć Twoje potrzeby i cele projektu.</p>
             </div>
             <div className="flex flex-col items-center justify-center text-center col-span-12 md:col-span-6 px-6 py-8 xl:p-12 space-y-4 border-b border-white/[0.1]">
-              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">02.</div>
+              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">02</div>
               <div className="text-white text-2xl">Wycena i ustalenia</div>
               <p className="text-slate-400 text-base">Na podstawie zebranych informacji przygotowuję szczegółową wycenę, ustalamy zakres prac, harmonogram oraz warunki współpracy.</p>
             </div>
 
             {/* Second row - span 4 columns each */}
             <div className="flex flex-col items-center justify-center text-center col-span-12 md:col-span-6 lg:col-span-4 px-6 py-8 xl:p-12 space-y-4 md:border-r border-white/[0.1] border-b lg:border-b-0 lg:border-r">
-              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">03.</div>
+              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">03</div>
               <div className="text-white text-2xl">Projekt i development</div>
               <p className="text-slate-400 text-base">Tworzę projekt graficzny oraz wdrażam funkcjonalności, dbając o responsywność, wydajność i estetykę strony.</p>
             </div>
             <div className="flex flex-col items-center justify-center text-center col-span-12 md:col-span-6 lg:col-span-4 px-6 py-8 xl:p-12 space-y-4 border-b border-white/[0.1] lg:border-b-0 lg:border-r">
-              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">04.</div>
+              <div className="w-fit text-6xl bg-black-200 p-4 rounded-xl">04</div>
               <div className="text-white text-2xl">Testowanie i poprawki </div>
               <p className="text-slate-400 text-base">Przeprowadzam testy, sprawdzam poprawność działania i nanoszę ewentualne poprawki, aby wszystko działało zgodnie z oczekiwaniami.</p>
             </div>
             <div className="flex flex-col items-center justify-center text-center col-span-12 lg:col-span-4 px-6 py-8 xl:p-12 space-y-4 border-b border-white/[0.1] md:border-0">
-              <div className="w-fit text-6xl bg-black-200  p-4 rounded-xl">05.</div>
+              <div className="w-fit text-6xl bg-black-200  p-4 rounded-xl">05</div>
               <div className="text-white text-2xl">Finalizacja i wdrożenie</div>
               <p className="text-slate-400 text-base">Uruchamiam stronę na docelowym serwerze oraz przeprowadzam krótkie szkolenie z jej obsługi, abyś mógł w pełni z niej korzystać.</p>
             </div>

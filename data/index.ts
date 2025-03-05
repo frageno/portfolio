@@ -44,8 +44,7 @@ export const navItems = [
       id: 1,
       title: "Gama OZE",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/project-2.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      img: "/project-1.jpg",
       link: "https://gamaoze.pl/",
     },
     {

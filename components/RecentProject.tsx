@@ -9,15 +9,14 @@ import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { FiChevronsLeft, FiChevronsRight } from "react-icons/fi"; // Add this import
+import { FiChevronsLeft, FiChevronsRight } from "react-icons/fi";
 
 const RecentProject = () => {
   return (
     <div id="projekty" className="space-y-12">
         <div className="space-y-6">
           <h2 className="heading">
-              Sprawdz moje { '' }
-              <span className="text-purple">ostatnie projekty</span>
+              Sprawdz moje ostatnie projekty
           </h2>
           <p className="text-slate-400 text-base text-center max-w-3xl mx-auto">Proces współpracy jest prosty i przejrzysty, tworzę projekt, wdrażam go, a następnie dopracowujemy szczegóły przed finalnym uruchomieniem. Dzięki temu masz pełną kontrolę nad efektem końcowym!</p>
         </div>
@@ -47,7 +46,7 @@ const RecentProject = () => {
               spaceBetween: 24
             },
             1280: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 24
             }
           }}
@@ -56,7 +55,7 @@ const RecentProject = () => {
             <SwiperSlide key={id}>
               <div className="w-full flex items-center justify-center rounded-3xl border border-white/[0.1]">
                 <div className="flex basis-full flex-col tracking-tight text-slate-100/50">
-                  <div className="relative w-full h-[200px] lg:h-[300px] overflow-hidden rounded-t-3xl bg-[#13162d]">
+                  <div className="relative w-full h-[200px] lg:h-[400px] overflow-hidden rounded-t-3xl bg-[#13162d]">
                     <Image 
                       src={img} 
                       alt={title} 
@@ -77,7 +76,7 @@ const RecentProject = () => {
                     </p>
                     <div className="flex items-center pt-4">
                       <a className="text-sm lg:text-base text-purple cursor-pointer">
-                        Check Live Site
+                        Zobacz stronę
                       </a>
                       <FaLocationArrow className="ms-3" color="#30AADD" />
                     </div>
