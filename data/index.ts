@@ -17,9 +17,11 @@ export const navItems = [
     },
     {
       id: 2,
-      title: `Cześć! Nazywam się Szymon Piątkowski i tworzę nowoczesne, responsywne strony internetowe oparte na WordPress i WooCommerce. Specjalizuję się w dedykowanych rozwiązaniach – nie korzystam z gotowych szablonów, dzięki czemu każdy projekt jest unikalny i dostosowany do potrzeb klienta.
-            <br /><br />Dbam o funkcjonalność, wydajność i bezpieczeństwo stron, a także o przejrzysty proces współpracy – od projektu graficznego, przez kodowanie, aż po wdrożenie.
-            <br /><br /> Jeśli szukasz kogoś, kto stworzy stronę od A do Z i zadba o każdy szczegół, zapraszam do kontaktu! 🚀`,
+      title: `Cześć! Nazywam się Szymon i tworzę nowoczesne, responsywne strony internetowe oparte na technologiach takich jak Next.js, React i WordPress. Stawiam na dedykowane rozwiązania, które są szybkie, wydajne i dopasowane do indywidualnych potrzeb klienta.
+              <br /><br />
+              Dbam o jakość kodu, optymalizację oraz intuicyjność stron, a cały proces realizacji – od projektu graficznego, przez kodowanie, aż po wdrożenie – przebiega w sposób przejrzysty i sprawny.
+              <br /><br />
+              Jeśli szukasz osoby, która stworzy stronę od A do Z i zadba o każdy detal – zapraszam do kontaktu! 🚀`,
       subtitle: "Kilka słów o mnie 👨‍💻",
       className: "lg:col-span-6 col-span-12",
       titleClassName: "justify-start",
@@ -44,7 +46,7 @@ export const navItems = [
       id: 1,
       title: "Gama OZE",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/project-1.jpg",
+      img: "/project-1.png",
       link: "https://gamaoze.pl/",
     },
     {

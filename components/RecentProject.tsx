@@ -16,9 +16,11 @@ const RecentProject = () => {
     <div id="projekty" className="space-y-12">
         <div className="space-y-6">
           <h2 className="heading">
-              Sprawdz moje ostatnie projekty
+            Sprawdz moje ostatnie projekty
           </h2>
-          <p className="text-slate-400 text-base text-center max-w-3xl mx-auto">Proces współpracy jest prosty i przejrzysty, tworzę projekt, wdrażam go, a następnie dopracowujemy szczegóły przed finalnym uruchomieniem. Dzięki temu masz pełną kontrolę nad efektem końcowym!</p>
+          <p className="text-slate-400 text-base text-center max-w-3xl mx-auto">
+            Sprawdź moje najnowsze projekty, w których łączę nowoczesny design z wydajnym kodem.
+          </p>
         </div>
 
         <div className="relative px-8 lg:px-6">
@@ -53,9 +55,12 @@ const RecentProject = () => {
         >
           {projects.map(({ id, title, des, img, link }) => (
             <SwiperSlide key={id}>
-              <div className="w-full flex items-center justify-center rounded-3xl border border-white/[0.1]">
+              <div className="w-full flex items-center justify-center rounded-3xl">
                 <div className="flex basis-full flex-col tracking-tight text-slate-100/50">
-                  <div className="relative w-full h-[200px] lg:h-[400px] overflow-hidden rounded-t-3xl bg-[#13162d]">
+                  <div className="relative w-full h-[200px] lg:h-[400px] overflow-hidden rounded-t-3xl bg-black-200">
+                    {/* Light effect */}
+                    <div className="absolute -left-20 -top-20 w-[200px] h-[200px] rounded-full bg-purple/10 blur-[100px] pointer-events-none" />
+                    <div className="absolute -right-20 -bottom-20 w-[200px] h-[200px] rounded-full bg-purple/10 blur-[100px] pointer-events-none" />
                     <Image 
                       src={img} 
                       alt={title} 
@@ -64,13 +69,13 @@ const RecentProject = () => {
                       className="w-full h-full object-cover relative"
                       priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/10 to-transparent"></div>
+                    {/* <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/10 to-transparent"></div> */}
                   </div>
                   
-                  <div className="p-6 lg:p-8 space-y-2">
-                    <h3 className="font-bold text-base lg:text-xl text-slate-100">
+                  <div className="p-6 lg:p-8 space-y-2 border border-t-0 rounded-b-3xl border-white/[0.1]">
+                    <div className="font-bold text-base lg:text-xl text-slate-100">
                       {title}
-                    </h3>
+                    </div>
                     <p className="text-sm lg:text-base text-slate-400 line-clamp-2">
                       {des}
                     </p>
