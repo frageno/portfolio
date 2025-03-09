@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 
 const transition = {
   type: "spring",
@@ -51,17 +53,54 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav
-      onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-transparent dark:border-white/[0.1] shadow-input flex justify-center space-x-4 px-8 md:px-16 lg:px-32 py-6"
-      style={{
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
-    >
-      {children}
+    <nav className="relative">
+      {/* Mobile Menu Button */}
+      <button 
+        className="md:hidden fixed left-1/2 -translate-x-1/2 z-50 text-white"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? (
+          <IoClose className="w-6 h-6" />
+        ) : (
+          <RxHamburgerMenu className="w-6 h-6" />
+        )}
+      </button>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ 
+              duration: 0.3,
+              ease: "easeInOut"
+            }}
+            className="md:hidden fixed inset-0 bg-black-100 z-40"
+          >
+            <div className="flex flex-col items-center justify-center h-full space-y-8">
+              {children}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Desktop Menu */}
+      <div
+        onMouseLeave={() => setActive(null)}
+        className="hidden md:flex relative rounded-full border border-transparent dark:border-white/[0.1] shadow-input justify-center space-x-4 px-8 md:px-16 lg:px-32 py-6"
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        {children}
+      </div>
     </nav>
   );
 };

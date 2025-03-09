@@ -23,7 +23,7 @@ const RecentProject = () => {
           </p>
         </div>
 
-        <div className="relative px-8 lg:px-6">
+        <div className="relative px-4 lg:px-6">
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -56,7 +56,7 @@ const RecentProject = () => {
           {projects.map(({ id, title, des, img, link }) => (
             <SwiperSlide key={id}>
               <div className="w-full flex items-center justify-center rounded-3xl">
-                <div className="flex basis-full flex-col tracking-tight text-slate-100/50">
+                <div className="flex basis-full flex-col tracking-tight text-slate-100/50 group/image">
                   <div className="relative w-full h-[200px] lg:h-[400px] overflow-hidden rounded-t-3xl bg-black-200">
                     {/* Light effect */}
                     <div className="absolute -left-20 -top-20 w-[200px] h-[200px] rounded-full bg-purple/10 blur-[100px] pointer-events-none" />
@@ -66,7 +66,7 @@ const RecentProject = () => {
                       alt={title} 
                       width={500}
                       height={300}
-                      className="w-full h-full object-cover relative"
+                      className="w-full h-full object-cover relative transition-transform duration-700 group-hover/image:scale-110"
                       priority
                     />
                     {/* <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/10 to-transparent"></div> */}
@@ -92,10 +92,10 @@ const RecentProject = () => {
           ))}
         </Swiper>
         {/* Custom arrows */}
-        <div className="swiper-button-prev !-left-3 md:!-left-6 lg:!-left-8 !text-purple !w-8 !h-8">
+        <div className="swiper-button-prev !-left-5 md:!-left-6 lg:!-left-8 !text-purple !w-8 !h-8">
             <FiChevronsLeft className="w-full h-full" />
         </div>
-        <div className="swiper-button-next !-right-3 md:!-right-6 lg:!-right-8 !text-purple !w-8 !h-8"> 
+        <div className="swiper-button-next !-right-5 md:!-right-6 lg:!-right-8 !text-purple !w-8 !h-8"> 
             <FiChevronsRight className="w-full h-full" />
         </div>
       </div>

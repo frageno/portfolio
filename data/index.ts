@@ -3,6 +3,7 @@ import { Iceberg } from "next/font/google";
 export const navItems = [
     { name: "O mnie", link: "#o-mnie" },
     { name: "Projekty", link: "#projekty" },
+    { name: "Współpraca", link: "#wspolpraca" },
     { name: "Kontakt", link: "#kontakt" },
   ];
   
@@ -12,7 +13,7 @@ export const navItems = [
       title: "Dążę do perfekcji w szczegółach – <br /> od kodu po końcowy design 🎯",
       className: "lg:col-span-6 col-span-12 min-h-[40vh] lg:h-auto",
       imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
+      titleClassName: "h-full justify-end",
       img: "/about-img.jpg",
     },
     {

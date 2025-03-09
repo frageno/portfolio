@@ -31,7 +31,7 @@ const collaborationSteps = [
 
 const Collaboration = () => {
   return (
-    <div className="relative w-full space-y-12">
+    <div id="wspolpraca" className="relative w-full space-y-12">
       <div className="h-screen w-screen dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] absolute top-0 left-1/2 -translate-x-1/2 flex items-center justify-center">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
