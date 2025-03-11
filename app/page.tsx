@@ -6,6 +6,7 @@ import Experience from "../components/Experience";
 import Collaboration from "@/components/Collaboration";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import CookieConsentBanner from "@/components/CookieConsent";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Footer />
       </div>
     </div>
+    <CookieConsentBanner />
   </main>
   );
 }
