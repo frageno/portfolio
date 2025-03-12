@@ -76,7 +76,7 @@ const RecentProject = () => {
                     <div className="font-bold text-base lg:text-xl text-slate-100">
                       {title}
                     </div>
-                    <p className="text-sm lg:text-base text-slate-400 line-clamp-2">
+                    <p className="text-sm lg:text-base text-slate-400 line-clamp-3">
                       {des}
                     </p>
                     <div className="flex items-center pt-4">

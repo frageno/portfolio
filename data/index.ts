@@ -46,66 +46,30 @@ export const navItems = [
     {
       id: 1,
       title: "Gama OZE",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      des: "Nowoczesna, responsywna strona dla firmy z branży OZE. Skupia się na czytelnej prezentacji usług, intuicyjnej nawigacji i optymalizacji pod kątem wydajności, zapewniając lepszą widoczność w sieci.",
       img: "/project-1.png",
       link: "https://gamaoze.pl/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      title: "Solar Energy",
+      des: "Nowoczesny szablon oparty na Elementorze, stworzony z myślą o branży OZE. Przejrzysty design, responsywność i łatwa edycja sprawiają, że idealnie nadaje się do promowania swoich usług.",
       img: "/project-2.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/adrianhajdin/zoom-clone",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/project-1.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      title: "ArchiNest",
+      des: "Elegancki szablon Elementor stworzony dla branży architektonicznej. Minimalistyczny design, pełna responsywność i łatwa personalizacja sprawiają, że świetnie nadaje się do prezentacji projektów.",
+      img: "/project-3.png",
       link: "https://github.com/adrianhajdin/ai_saas_app",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/project-1.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      title: "Cition",
+      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      img: "/project-4.png",
       link: "https://github.com/adrianhajdin/iphone",
-    },
-  ];
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
     },
   ];
   
