@@ -71,6 +71,34 @@ export const navItems = [
       img: "/project-4.png",
       link: "https://github.com/adrianhajdin/iphone",
     },
+    {
+      id: 5,
+      title: "BetterBiz",
+      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      img: "/project-5.png",
+      link: "https://github.com/adrianhajdin/iphone",
+    },
+    {
+      id: 5,
+      title: "Medicare",
+      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      img: "/project-6.png",
+      link: "https://github.com/adrianhajdin/iphone",
+    },
+    {
+      id: 7,
+      title: "UserVice",
+      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      img: "/project-7.png",
+      link: "https://github.com/adrianhajdin/iphone",
+    },
+    {
+      id: 8,
+      title: "Agency.",
+      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      img: "/project-8.png",
+      link: "https://github.com/adrianhajdin/iphone",
+    },
   ];
   
   export const workExperience = [
