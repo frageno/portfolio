@@ -80,7 +80,7 @@ const RecentProject = () => {
                       {des}
                     </p>
                     <div className="flex items-center pt-4">
-                      <a className="text-sm lg:text-base text-purple cursor-pointer">
+                      <a href={link} target="_blank" className="text-sm lg:text-base text-purple cursor-pointer">
                         Zobacz stronę
                       </a>
                       <FaLocationArrow className="ms-3" color="#30AADD" />

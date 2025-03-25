@@ -6,7 +6,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const mobileVariants = {
   initial: { top: "6rem" },
-  scrolled: { top: "1.5rem" }
+  scrolled: { top: "1rem" }
 };
 
 const desktopVariants = {

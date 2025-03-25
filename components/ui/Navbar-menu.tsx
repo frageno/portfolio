@@ -57,15 +57,16 @@ export const Menu = ({
 
   return (
     <nav className="relative">
-      {/* Mobile Menu Button */}
+      {/* Mobile Menu Button with background */}
       <button 
-        className="md:hidden fixed left-1/2 -translate-x-1/2 z-50 text-white"
+        className={`md:hidden fixed left-1/2 -translate-x-1/2 z-50 p-2 rounded-xl transition-all duration-300
+          ${isOpen ? 'bg-transparent' : 'bg-black-200 backdrop-blur-sm'}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
-          <IoClose className="w-6 h-6" />
+          <IoClose className="w-6 h-6 text-white" />
         ) : (
-          <RxHamburgerMenu className="w-6 h-6" />
+          <RxHamburgerMenu className="w-6 h-6 text-white" />
         )}
       </button>
 
@@ -76,11 +77,8 @@ export const Menu = ({
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -100 }}
-            transition={{ 
-              duration: 0.3,
-              ease: "easeInOut"
-            }}
-            className="md:hidden fixed inset-0 bg-black-100 z-40"
+            transition={{ duration: 0.3 }}
+            className="md:hidden fixed inset-0 bg-black-100/95 backdrop-blur-md z-40"
           >
             <div className="flex flex-col items-center justify-center h-full space-y-8">
               {children}
