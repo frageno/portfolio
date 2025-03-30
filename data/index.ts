@@ -18,11 +18,11 @@ export const navItems = [
     },
     {
       id: 2,
-      title: `Cześć! Nazywam się Szymon i tworzę nowoczesne, responsywne strony internetowe oparte na technologiach takich jak Next.js, React i WordPress. Stawiam na dedykowane rozwiązania, które są szybkie, wydajne i dopasowane do indywidualnych potrzeb klienta.
-              <br /><br />
-              Dbam o jakość kodu, optymalizację oraz intuicyjność stron, a cały proces realizacji – od projektu graficznego, przez kodowanie, aż po wdrożenie – przebiega w sposób przejrzysty i sprawny.
-              <br /><br />
-              Jeśli szukasz osoby, która stworzy stronę od A do Z i zadba o każdy detal – zapraszam do kontaktu! 🚀`,
+      title: `Cześć! Nazywam się Szymon i pomagam firmom zaistnieć w sieci, tworząc nowoczesne, responsywne strony internetowe oparte na Next.js, React i WordPress. Moje rozwiązania są szybkie, wydajne i dopasowane do Twoich celów biznesowych.
+          <br /><br />
+          Dbam o każdy detal – od projektu graficznego, przez optymalizację i kodowanie, aż po wdrożenie. Tworzę strony, które nie tylko świetnie wyglądają, ale także przyciągają klientów i zwiększają Twoją widoczność w sieci.
+          <br /><br />
+          Chcesz wyróżnić się online spośród konkurencji i przekuć stronę na realne korzyści? Skontaktuj się ze mną, i stworzmy razem coś wyjątkowego! 🚀`,
       subtitle: "Kilka słów o mnie 👨‍💻",
       className: "lg:col-span-6 col-span-12",
       titleClassName: "justify-start",
@@ -47,14 +47,14 @@ export const navItems = [
       id: 1,
       title: "Gama OZE",
       des: "Nowoczesna, responsywna strona dla firmy z branży OZE. Skupia się na czytelnej prezentacji usług, intuicyjnej nawigacji i optymalizacji pod kątem wydajności, zapewniając lepszą widoczność w sieci.",
-      img: "/project-1.png",
+      img: "/project-2.png",
       link: "https://gamaoze.pl/",
     },
     {
       id: 2,
       title: "Solar Energy",
       des: "Nowoczesny szablon oparty na Elementorze, stworzony z myślą o branży OZE. Przejrzysty design, responsywność i łatwa edycja sprawiają, że idealnie nadaje się do promowania swoich usług.",
-      img: "/project-2.png",
+      img: "/project-1.png",
       link: "https://solarenergy.theme-genic.com/",
     },
     {
@@ -73,29 +73,29 @@ export const navItems = [
     },
     {
       id: 5,
-      title: "BetterBiz",
-      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      title: "SmartBiz",
+      des: " Nowoczesny i responsywny szablon Elementor dla firm i startupów. Przejrzysty design, intuicyjna nawigacja i łatwa personalizacja sprawiają, że świetnie nadaje się do prezentacji usług biznesowych.",
       img: "/project-5.png",
-      link: "https://betterbiz.theme-genic.com/",
+      link: "https://smartbiz.theme-genic.com/",
     },
     {
       id: 5,
       title: "Medicare",
-      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      des: "Profesjonalny szablon Elementor stworzony z myślą o branży medycznej. Czysty i nowoczesny design, intuicyjna nawigacja oraz pełna responsywność sprawiają, że idealnie nadaje się dla klinik i placówek medycznych.",
       img: "/project-6.png",
       link: "https://medicare.theme-genic.com/",
     },
     {
       id: 7,
       title: "UserVice",
-      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      des: "Nowoczesny i funkcjonalny szablon Elementor dla firm usługowych. Przejrzysty design, łatwa edycja i pełna responsywność sprawiają, że świetnie nadaje się dla specjalistów z różnych branż.",
       img: "/project-7.png",
-      link: "https://uservice.theme-genic.com/e",
+      link: "https://uservice.theme-genic.com/",
     },
     {
       id: 8,
       title: "Agency.",
-      des: "Nowoczesny szablon Elementor idealny dla firm i startupów. Czysty design, intuicyjna nawigacja i pełna responsywność sprawiają, że świetnie nadaje się do profesjonalnej prezentacji usług.",
+      des: "Elegancki one-pager stworzony w Next.js dla nowoczesnych agencji. Szybkość, responsywność i nowoczesny design sprawiają, że idealnie nadaje się do prezentacji usług i portfolio.",
       img: "/project-8.png",
       link: "https://github.com/frageno/agency",
     },
