@@ -114,7 +114,7 @@ export const navItems = [
       id: 2,
       title: "Twoje cele są moim priorytetem",
       icon: "🤝",
-      desc: "Wsłuchuję się w potrzeby klienta, dostarczając rozwiązania idealnie dopasowane do wymagań i potrzeb klienta.",
+      desc: "Wsłuchuję się w potrzeby klienta, dostarczając rozwiązania idealnie dopasowane do wymagań i potrzeb klienta",
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },

@@ -66,7 +66,7 @@ const RecentProject = () => {
                       alt={title} 
                       width={500}
                       height={300}
-                      className="w-full h-full object-cover relative transition-transform duration-700 group-hover/image:scale-110"
+                      className="w-full h-full object-cover relative transition-transform duration-700 md:group-hover/image:scale-110"
                       priority
                     />
                     {/* <div className="absolute inset-0 bg-gradient-to-br from-[#393bb2]/10 to-transparent"></div> */}

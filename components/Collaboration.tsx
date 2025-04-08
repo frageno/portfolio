@@ -5,27 +5,27 @@ const collaborationSteps = [
   {
     id: "01",
     title: "Kontakt i analiza potrzeb",
-    description: "Rozpoczynamy od rozmowy lub wypełnienia formularza, aby dokładnie zrozumieć Twoje potrzeby i cele projektu."
+    description: "Rozpoczynamy od rozmowy lub wypełnienia formularza, aby dokładnie zrozumieć Twoje potrzeby i cele projektu"
   },
   {
     id: "02",
     title: "Wycena i ustalenia",
-    description: "Na podstawie zebranych informacji przygotowuję szczegółową wycenę, ustalamy zakres prac, harmonogram oraz warunki współpracy."
+    description: "Na podstawie zebranych informacji przygotowuję szczegółową wycenę, ustalamy zakres prac, harmonogram oraz warunki współpracy"
   },
   {
     id: "03",
     title: "Projekt i development",
-    description: "Tworzę projekt graficzny oraz wdrażam funkcjonalności, dbając o responsywność, wydajność i estetykę strony."
+    description: "Tworzę projekt graficzny oraz wdrażam funkcjonalności, dbając o responsywność, wydajność i estetykę strony"
   },
   {
     id: "04",
     title: "Testowanie i poprawki",
-    description: "Przeprowadzam testy, sprawdzam poprawność działania i nanoszę ewentualne poprawki, aby wszystko działało zgodnie z oczekiwaniami."
+    description: "Przeprowadzam testy, sprawdzam poprawność działania i nanoszę ewentualne poprawki, aby wszystko działało zgodnie z oczekiwaniami"
   },
   {
     id: "05",
     title: "Finalizacja i wdrożenie",
-    description: "Uruchamiam stronę na docelowym serwerze oraz przeprowadzam krótkie szkolenie z jej obsługi, abyś mógł w pełni z niej korzystać."
+    description: "Uruchamiam stronę na docelowym serwerze oraz przeprowadzam krótkie szkolenie z jej obsługi, abyś mógł w pełni z niej korzystać"
   }
 ]
 
