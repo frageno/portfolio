@@ -31,11 +31,4 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           password: ${{ secrets.REMOTE_PASS }}
           local-dir: ./out/
-          server-dir: ./
-          dangerous-clean-slate: true
-          timeout: 360000  # Increase timeout to 6 minutes
-          max-connections: 1  # Reduce concurrent connections
-          state-name: .ftp-deploy-sync-state.json
-          log-level: verbose
-          retry-count: 3
-          retry-delay: 5000
+          server-dir: /public-html/
