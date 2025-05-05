@@ -32,3 +32,11 @@ jobs:
           password: ${{ secrets.REMOTE_PASS }}
           local-dir: ./out/
           server-dir: /public-html/
+          dangerous-clean-slate: true
+          timeout: 600000           # Increased timeout to 10 minutes
+          max-connections: 1        # Limit to single connection
+          state-name: .ftp-deploy-sync-state.json
+          log-level: verbose
+          retry-count: 5           # Increased retry attempts
+          retry-delay: 10000       # Increased delay between retries
+          passive: true   
