@@ -31,16 +31,25 @@ const RecentProject = () => {
             prevEl: '.swiper-button-prev',
           }}
           threshold={5}
-          touchRatio={1.5}
-          resistance={true}
-          resistanceRatio={0.85}
-          longSwipes={false}
-          followFinger={true}
-          grabCursor={true}
-          watchSlidesProgress={true}
-          preventInteractionOnTransition={true}
+           // Optimize touch handling
+          touchRatio={1}                    // Reduced from 1.5 for more natural feel
+          touchAngle={45}                   // Add touch angle threshold
+          touchMoveStopPropagation={true}   // Stop event propagation
+          resistanceRatio={0.65}           // Reduced resistance for smoother feel
+          
+          // Performance optimizations
+          observer={true}                   // Enable observer for better dynamic updates
+          observeParents={true}            // Watch for parent element changes
+          watchOverflow={true}             // Disable when not enough slides
+          
+          // Speed and momentum
+          speed={300}                      // Faster transition speed
+          momentum={false}                 // Disable momentum to reduce lag
+          
+          // Other settings
           slidesPerView={1}
           spaceBetween={16}
+          grabCursor={true}
           className="w-full"
           breakpoints={{
             320: {
