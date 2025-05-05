@@ -43,8 +43,7 @@ const RecentProject = () => {
           watchOverflow={true}             // Disable when not enough slides
           
           // Speed and momentum
-          speed={300}                      // Faster transition speed
-          momentum={false}                 // Disable momentum to reduce lag
+          speed={300}                     
           
           // Other settings
           slidesPerView={1}
