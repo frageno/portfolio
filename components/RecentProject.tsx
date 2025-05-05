@@ -63,7 +63,7 @@ const RecentProject = () => {
         >
           {projects.map(({ id, title, des, img, link }) => (
             <SwiperSlide key={id}>
-              <div className="w-full flex items-center justify-center rounded-3xl">
+              <div className="w-full flex items-center justify-center rounded-3xl px-2 md:px-0">
                 <div className="flex basis-full flex-col tracking-tight text-slate-100/50 group/image">
                   <div className="relative w-full h-[200px] lg:h-[400px] overflow-hidden rounded-t-3xl bg-black-200">
                     {/* Light effect */}
@@ -100,10 +100,10 @@ const RecentProject = () => {
           ))}
         </Swiper>
         {/* Custom arrows */}
-        <div className="swiper-button-prev !-left-5 md:!-left-6 lg:!-left-8 !text-purple !w-8 !h-8">
+        <div className="swiper-button-prev !-left-4 md:!-left-6 lg:!-left-8 !text-purple !w-8 !h-8">
             <FiChevronsLeft className="w-full h-full" />
         </div>
-        <div className="swiper-button-next !-right-5 md:!-right-6 lg:!-right-8 !text-purple !w-8 !h-8"> 
+        <div className="swiper-button-next !-right-4 md:!-right-6 lg:!-right-8 !text-purple !w-8 !h-8"> 
             <FiChevronsRight className="w-full h-full" />
         </div>
       </div>
