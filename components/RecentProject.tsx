@@ -31,24 +31,16 @@ const RecentProject = () => {
             prevEl: '.swiper-button-prev',
           }}
           threshold={5}
-           // Optimize touch handling
-          touchRatio={1}                    // Reduced from 1.5 for more natural feel
-          touchAngle={45}                   // Add touch angle threshold
-          touchMoveStopPropagation={true}   // Stop event propagation
-          resistanceRatio={0.65}           // Reduced resistance for smoother feel
-          
-          // Performance optimizations
-          observer={true}                   // Enable observer for better dynamic updates
-          observeParents={true}            // Watch for parent element changes
-          watchOverflow={true}             // Disable when not enough slides
-          
-          // Speed and momentum
-          speed={300}                     
-          
-          // Other settings
+          touchRatio={1.5}
+          resistance={true}
+          resistanceRatio={0.85}
+          longSwipes={false}
+          followFinger={true}
+          grabCursor={true}
+          watchSlidesProgress={true}
+          preventInteractionOnTransition={true}
           slidesPerView={1}
           spaceBetween={16}
-          grabCursor={true}
           className="w-full"
           breakpoints={{
             320: {
@@ -75,8 +67,8 @@ const RecentProject = () => {
                 <div className="flex basis-full flex-col tracking-tight text-slate-100/50 group/image">
                   <div className="relative w-full h-[200px] lg:h-[400px] overflow-hidden rounded-t-3xl bg-black-200">
                     {/* Light effect */}
-                    <div className="absolute -left-20 -top-20 w-[200px] h-[200px] rounded-full bg-purple/10 blur-[100px] pointer-events-none" />
-                    <div className="absolute -right-20 -bottom-20 w-[200px] h-[200px] rounded-full bg-purple/10 blur-[100px] pointer-events-none" />
+                    <div className="absolute -left-20 -top-20 w-[200px] h-[200px] rounded-full bg-purple/10 md:blur-[100px] pointer-events-none" />
+                    <div className="absolute -right-20 -bottom-20 w-[200px] h-[200px] rounded-full bg-purple/10 md:blur-[100px] pointer-events-none" />
                     <Image 
                       src={img} 
                       alt={title} 
