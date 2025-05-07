@@ -28,6 +28,7 @@ export default function Navbar({
   const [active, setActive] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Add this state
   const { scrollY } = useScroll();
 
   useEffect(() => {
@@ -53,6 +54,12 @@ export default function Navbar({
     }
   });
 
+  const handleMenuItemClick = () => {
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <motion.div
       variants={isMobile ? mobileVariants : desktopVariants}
@@ -66,7 +73,7 @@ export default function Navbar({
         className
       )}
     >
-      <Menu setActive={setActive}>
+      <Menu setActive={setActive} isOpen={isMenuOpen} setIsOpen={setIsMenuOpen}>
         {navItems.map((item) => (
           <MenuItem 
             key={item.name}
@@ -74,6 +81,7 @@ export default function Navbar({
             active={active} 
             item={item.name}
             link={item.link}
+            onClick={handleMenuItemClick}
           />
         ))}
       </Menu>

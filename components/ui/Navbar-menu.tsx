@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import { cn } from "@/utils/cn";
 
 const transition = {
   type: "spring",
@@ -15,52 +16,64 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({
-  setActive,
-  active,
-  item,
+export const MenuItem = ({ 
+  setActive, 
+  active, 
+  item, 
   link,
-  children,
-}: {
-  setActive: (item: string) => void;
+  onClick 
+}: { 
+  setActive: (item: string | null) => void;
   active: string | null;
   item: string;
   link: string;
-  children?: React.ReactNode;
+  onClick?: () => void;
 }) => {
   return (
-    <div className="relative"
-        onMouseEnter={() => setActive(item)}
+    <a
+      href={link}
+      onMouseEnter={() => setActive(item)}
+      onMouseLeave={() => setActive(null)}
+      onClick={onClick}
+      className={cn(
+        "text-sm lg:text-base relative rounded-lg px-4 py-2",
+        active === item ? "text-purple" : "text-slate-100"
+      )}
     >
-      <Link href={link}>
-        <motion.span
-          transition={{ duration: 0.3 }}
-          className={`cursor-pointer text-base font-semibold transition-colors duration-300 ${
-            active === item ? 'text-purple' : 'text-black dark:text-white'
-          }`}
-        >
-          {item}
-        </motion.span>
-      </Link>
-    </div>
+      {item}
+    </a>
   );
 };
 
 export const Menu = ({
   setActive,
   children,
+  isOpen,
+  setIsOpen
 }: {
   setActive: (item: string | null) => void;
   children: React.ReactNode;
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  // Add useEffect to handle body scroll
+  React.useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    // Cleanup function
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
 
   return (
     <nav className="relative">
-      {/* Mobile Menu Button with background */}
       <button 
-        className={`md:hidden fixed left-1/2 -translate-x-1/2 z-50 p-2 rounded-xl transition-all duration-300
-          ${isOpen ? 'bg-transparent' : 'bg-black-200 backdrop-blur-sm'}`}
+        className="md:hidden fixed left-1/2 -translate-x-1/2 z-50 p-2 rounded-xl bg-black-200/80 backdrop-blur-sm border border-white/[0.1]"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
@@ -70,14 +83,13 @@ export const Menu = ({
         )}
       </button>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -100 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2 }}
             className="md:hidden fixed inset-0 bg-black-100/95 backdrop-blur-md z-40"
           >
             <div className="flex flex-col items-center justify-center h-full space-y-8">
@@ -87,16 +99,7 @@ export const Menu = ({
         )}
       </AnimatePresence>
 
-      {/* Desktop Menu */}
-      <div
-        onMouseLeave={() => setActive(null)}
-        className="hidden md:flex relative rounded-full border border-transparent dark:border-white/[0.1] shadow-input justify-center space-x-4 px-8 md:px-16 lg:px-32 py-6"
-        style={{
-          background: "rgb(4,7,29)",
-          backgroundColor:
-            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-        }}
-      >
+      <div className="hidden md:flex items-center justify-center rounded-full bg-black-200 border border-white/[0.1] shadow-input px-4">
         {children}
       </div>
     </nav>

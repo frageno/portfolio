@@ -16,7 +16,7 @@ const RecentProject = () => {
     <div id="projekty" className="space-y-12">
         <div className="space-y-6">
           <h2 className="heading">
-            Sprawdz moje ostatnie projekty
+            Sprawdź moje ostatnie projekty
           </h2>
           <p className="text-slate-400 text-base text-center max-w-3xl mx-auto">
             Sprawdź moje najnowsze projekty, w których łączę nowoczesny design z wydajnym kodem.
