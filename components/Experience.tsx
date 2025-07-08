@@ -14,7 +14,7 @@ const Experience = () => {
                     key={card.id}
                     duration={Math.floor(Math.random() * 10000) + 10000}
                     borderRadius='1.75rem'
-                    classNames="flex-1 text-white border-neutral-200 dark:border-white/[0.1]">
+                    classNames="flex-1 text-white border-neutral-200 dark:border-white/[0.1] test">
                     <div className="flex lg:flex-row flex-col lg:items-center p-6 md:p-8 xl:p-12 gap-2">
                         <div className="text-4xl md:text-5xl mb-4 lg:mb-0">
                             {card.icon}
