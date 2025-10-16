@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
          {/* Google Analytics */}
          <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
