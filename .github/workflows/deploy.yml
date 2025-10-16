@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           password: ${{ secrets.REMOTE_PASS }}
           local-dir: ./out/
-          server-dir: /public-html/
+          server-dir: /public_html/
           dangerous-clean-slate: true
           timeout: 600000           # Increased timeout to 10 minutes
           max-connections: 1        # Limit to single connection
