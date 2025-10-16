@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cgi-bin/
+Sitemap: https://www.piatkowski-dev.pl/sitemap.xml
